@@ -1,0 +1,29 @@
+<!-- views/points.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Points</title>
+  <link rel="stylesheet" href="/public/css/styles.css">
+  <link rel="stylesheet" href="/public/css/points.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>My Points</h1>
+  </header>
+
+  <section class="container">
+    <div class="points-container">
+      <h2>Your Points</h2>
+      <p class="points-count" id="userPoints">Loading...</p>
+    </div>
+  </section>
+
+  <script>
+    // Inline script to pass the user ID to the JavaScript file
+    var userId = "<%= user ? user.id : '' %>";
+  </script>
+  <script src="/public/js/points.js"></script>
+</body>
+</html>

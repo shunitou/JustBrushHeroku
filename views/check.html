@@ -1,0 +1,62 @@
+<!-- views/check.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Functionality</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/check.css">
+</head>
+<% if (userRole === 'special') { %>
+<body>
+  <header class="navbar">
+    <h1>Check Functionality</h1>
+    <nav>
+      <a href="#image-visualization">Image Visualization</a>
+      <a href="#reward-user">Reward User</a>
+    </nav>
+  </header>
+
+  <section id="image-visualization" class="container">
+    <h2>Image Visualization</h2>
+    <form action="/check" method="get">
+      <label for="filter">Filter by Name:</label>
+      <input type="text" id="filter" name="filter">
+      <button type="submit" class="button">Apply Filter</button>
+    </form>
+
+    <ul class="image-list">
+      <% images.forEach(image => { %>
+        <li class="image-item">
+          <div class="user-info">
+            User ID: <%= image.userId %>
+          </div>
+          <div class="image-info">
+            Image Name: <%= image.imageName %>
+          </div>
+          <div class="actions">
+            <a href="/reward?userId=<%= image.userId %>" class="reward-button">Reward</a>
+          </div>
+        </li>
+      <% }); %>
+    </ul>
+  </section>
+
+  <section id="reward-user" class="container">
+    <h2>Reward User</h2>
+    <form action="/reward" method="post">
+      <label for="userId">User ID:</label>
+      <input type="number" id="userId" name="userId" required>
+      <label for="rewardAmount">Reward Amount:</label>
+      <input type="number" id="rewardAmount" name="rewardAmount" required>
+      <button type="submit" class="button">Reward User</button>
+    </form>
+  </section>
+</body>
+<% } else { %>
+  <body>
+    <p class="no-permission-message">You do not have permission to access this page.</p>
+  </body>
+<% } %>
+</html>

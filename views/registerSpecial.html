@@ -1,0 +1,29 @@
+<!-- views/registerSpecial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special User Registration</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Special User Registration</h1>
+  </header>
+
+  <section class="container">
+    <form action="/register" method="post" class="registration-form">
+      <input type="hidden" name="role" value="special">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <label for="registrationCode">Registration Code:</label>
+      <input type="text" id="registrationCode" name="registrationCode" required>
+      <button type="submit" class="button">Register</button>
+    </form>
+  </section>
+</body>
+</html>

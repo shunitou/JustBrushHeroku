@@ -1,0 +1,56 @@
+/* public/css/register.css */
+/* Styles for the registration page */
+
+/* Header Styles */
+.navbar {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  /* Section Styles */
+  .container {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  /* Registration Form Styles */
+  .registration-form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Add more styles as needed */
+  

@@ -1,0 +1,24 @@
+{
+    "name": "your-project-name",
+    "version": "1.0.0",
+    "description": "Description of your project",
+    "main": "app.js", // Entry point of your application
+    "scripts": {
+      "start": "node app.js" // Command to start your application
+    },
+    "dependencies": {
+      "express": "^4.17.1", // Version of Express.js
+      "express-session": "^1.17.1", // Version of express-session for session management
+      "passport": "^0.4.1", // Version of Passport.js for authentication
+      "passport-local": "^1.0.0", // Version of Passport Local strategy for local authentication
+      "multer": "^1.4.2", // Version of Multer for handling file uploads
+      "bcrypt": "^5.0.1", // Version of bcrypt for password hashing
+      "pg": "^8.6.0" // Version of pg for PostgreSQL database interaction
+      // Add other dependencies as needed
+    },
+    "devDependencies": {},
+    "engines": {
+      "node": ">=14.0.0" // Minimum required version of Node.js
+    }
+  }
+  

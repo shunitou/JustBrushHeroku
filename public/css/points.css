@@ -1,0 +1,37 @@
+/* public/css/points.css */
+/* Styles for the points page */
+
+/* Header Styles */
+.navbar {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  /* Section Styles */
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  /* Points Container Styles */
+  .points-container {
+    text-align: center;
+  }
+  
+  .points-container h2 {
+    color: #333;
+  }
+  
+  .points-count {
+    font-size: 2em;
+    color: #2ecc71;
+  }
+  
+  /* Add more styles as needed */
+  
